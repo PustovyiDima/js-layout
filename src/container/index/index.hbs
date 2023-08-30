@@ -1,13 +1,60 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
+{{! <div class="page">
+    <div class="header">
+        <button class="button"><img width="24px" height="24px" src="/svg/arrow-back-outline.svg" alt=""></button>
+        <button class="button"><img width="24px" height="24px" src="/img/IMG_4737 1.png" alt=""></button>
+    </div>>}}
+    {{!
+    <h1 class='title'>Мій блог</h1> }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+    {{! <div class="post__list"> }}
 
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
+        {{!-- {{>blog__item text='До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс'
+        date='25.01'
+        isImportant=true isNew=true colored=true}}
+        {{>blog__item text='Ми хотіли щоб у цьому чаті було близько 150 людей щоб зробити якісний пак самопрезентацій.'
+        date='15.01' isImportant=true isNew=true}}
+        {{>blog__item text='До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс' date='25.01'
+        isImportant=true isNew=true colored=true}} --}}
+
+        {{! <div class="post">
+            <div class="post__header">
+                <div class="post__category--list">
+                    <span class="post__category post__category__important">Важливо</span>
+                    <span class=" post__category post__category__new">Нова</span>
+                </div>
+                <div class="post__date">25.01</div>
+            </div>
+            <p class="post__info">До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс'</p>
+        </div>
+        <div class="post">
+            <div class="post__header">
+                <div class="post__category--list">
+                    <span class="post__category post__category__important">Важливо</span>
+                    <span class=" post__category post__category__new">Нова</span>
+                </div>
+                <div class="post__date">15.01</div>
+            </div>
+            <p class="post__info">'Ми хотіли щоб у цьому чаті було близько 150 людей щоб зробити якісний пак
+                самопрезентацій.'</p>
+        </div>
+        <div class="post">
+            <div class="post__header">
+                <div class="post__category--list">
+                    <span class="post__category post__category__important">Важливо</span>
+                    <span class=" post__category post__category__new">Нова</span>
+                </div>
+                <div class="post__date">25.01</div>
+            </div>
+            <p class="post__info">До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс'</p>
+        </div>
+
+    </div>
+</div> }}
+
+<div class='page page_1'>
+
+</div>
+
+<div class='page page_2'>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="post {{#if colored}}post__colored{{else}} post__uncolored{{/if}}">
+	<div class="post__about">
+		<div class="post__badges">
+			{{#if isImportant}}<span class="post__badge post__badge__important">Важливо</span>{{/if}}
+			{{#if isNew}}<span class=" post__badge post__badge__new">Нова</span>{{/if}}
+		</div>
+		<div class="post__date">{{date}}</div>
+	</div>
+	<p class="post__text">{{text}}</p>
+</div>

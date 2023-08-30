@@ -1,11 +1,16 @@
 $colorMap: (
-	light: #ddd,
-	border: #ced4da,
-	dark: #121212,
-	gray: #BDBDBD,
-	main: blue
+  dark-text: #121212,
+  second-text: #363636,
+  grey-text: #888,
+  input: #f7f7f7,
+  border: #e6e6e6,
+  orange: #f46f17,
+  purple: #ef5da8,
+  lite-purple: #f6e8ef,
+  lite-orange: #f7e9e1,
+  white: #fff,
 );
 
-@function color ($key) {
-	@return map-get($colorMap, $key);
+@function color($key) {
+  @return map-get($colorMap, $key);
 }

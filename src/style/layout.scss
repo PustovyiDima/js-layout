@@ -1,0 +1,26 @@
+@use '../style/' as s;
+
+.page {
+  display: grid;
+  gap: s.space(5);
+  padding: 16px 12px;
+  max-width: 375px;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  & .button {
+    width: 24px;
+    height: 24px;
+  }
+}
+.title {
+  color: s.color('dark-text');
+  //   font-family: PT Root UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 24px */
+}

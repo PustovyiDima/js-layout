@@ -1,6 +1,10 @@
-
-
 body {
-	font-family: 'Roboto', sans-serif;
-	padding: 100px;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  margin: 100px auto;
+  height: 100%;
 }

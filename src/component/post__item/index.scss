@@ -1,0 +1,73 @@
+@use '../../style' as s;
+
+.blog {
+  width: 100%;
+  min-height: 132px;
+  display: flex;
+  width: 343px;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 10px;
+  //   border: 1px solid var(--border-devider, #e6e6e6);
+  //   background: var(--input, #F7F7F7);
+  &__uncolored {
+    border: 1px solid s.color('border');
+    & .blog__text {
+      color: s.color('grey-text');
+    }
+  }
+
+  &__colored {
+    background: s.color('input');
+    & .blog__text {
+      color: s.color('second-text');
+    }
+  }
+
+  &__about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__badges {
+    display: flex;
+    gap: s.space(2);
+  }
+
+  &__badge {
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 12px;
+
+    &__important {
+      background: s.color('lite-orange');
+      color: s.color(orange);
+    }
+
+    &__new {
+      background: s.color('lite-purple');
+      color: s.color(purple);
+    }
+  }
+
+  &__date {
+    color: s.color('grey-text');
+    font-size: 14px;
+  }
+
+  &__text {
+    // color: s.color('second-text');
+    // font-family: PT Root UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
